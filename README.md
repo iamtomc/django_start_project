@@ -1,6 +1,6 @@
 # Django Start Project
 
-A boilerplate to Start Django project
+A boilerplate to a start django 2 project.
 
 ## Installation
 

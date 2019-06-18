@@ -47,6 +47,11 @@ EMAIL_HOST_PASSWORD=
 ## Create User and Run project
 Create superuser:
 ```code
+./manage.py migrate
+```
+
+Create superuser:
+```code
 ./manage.py createsuperuser
 ```
 

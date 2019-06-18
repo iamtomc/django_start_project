@@ -24,18 +24,36 @@ $ pip install -r requirements.txt
 
 ## Optional Config
 
-Edit the file settings.py:
+Edit the file .env:
 
 ```code
-PROJECT = {
-    'title': config('PROJECT_TITLE'),
-    'description': "",
-    'author': config('PROJECT_AUTHOR'),
-    'author_url': config('PROJECT_AUTHOR_URL'),
-    'maps': config('GOOGLE_KEY_MAPS'),
-}
+SECRET_KEY=CHANGE_ME_HERE
+DEBUG=True
+ALLOWED_HOSTS=*
+
+PROJECT_TITLE=CHANGE_ME_HERE
+PROJECT_AUTHOR=CHANGE_ME_HERE
+PROJECT_AUTHOR_URL=CHANGE_ME_HERE
+GOOGLE_KEY_MAPS=CHANGE_ME_HERE
+
+EMAIL_BACKEND=django.core.mail.backends.console.EmailBackend
+EMAIL_HOST=localhost
+EMAIL_PORT=25
+EMAIL_USE_TLS=False
+EMAIL_HOST_USER=
+EMAIL_HOST_PASSWORD=
 ```
 
+## Create User and Run project
+Create superuser:
+```code
+./manage.py createsuperuser
+```
+
+Run:
+```code
+./manage.py runserver
+```
 ## Start Theme
 
 - https://github.com/BlackrockDigital/startbootstrap-creative
